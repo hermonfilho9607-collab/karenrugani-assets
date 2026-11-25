@@ -266,6 +266,15 @@ body.menu-open .site-header { background: transparent; box-shadow: none; backdro
 .quote footer span { color: var(--gold-text); }
 .quotes .carousel-nav { margin-top: 40px; }
 
+.testimonials h2 { margin-bottom: 40px; }
+.rating { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.rating-score { display: flex; align-items: center; gap: 18px; }
+.rating-num { font-family: var(--serif); font-weight: 300; font-size: clamp(72px, 18vw, 120px); line-height: .9; font-variant-numeric: lining-nums; }
+.rating-stars { font-size: 22px; letter-spacing: .18em; color: var(--gold-text); }
+.rating-label { max-width: 30em; color: var(--muted); }
+.rating-date { white-space: nowrap; }
+.rating .btn { margin-top: 10px; }
+
 /* CTA dividido */
 .cta-split { background: var(--linen); display: grid; }
 .cta-media { margin: 0; overflow: hidden; aspect-ratio: 1 / 1.05; background: var(--sand); }

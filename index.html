@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="img/hero-700.webp" imagesrcset="img/hero-700.webp 700w, img/hero-1200.webp 1200w, img/hero-1800.webp 1440w" imagesizes="(min-width: 960px) 52vw, 100vw">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
 
   <script type="application/ld+json">
   {
@@ -52,6 +52,12 @@
       "addressCountry": "BR"
     },
     "areaServed": { "@type": "City", "name": "Belo Horizonte" },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }],
     "sameAs": ["https://www.instagram.com/drakarenrugani/"],
     "founder": {
       "@type": "Person",
@@ -332,28 +338,38 @@
       </div>
     </section>
 
-    <!-- 7. DEPOIMENTOS -->
-    <!-- [PREENCHER] Substitua pelos depoimentos reais (com autorização). Não invente depoimentos. -->
+    <!-- 7. DEPOIMENTOS / AVALIAÇÕES -->
     <section class="section testimonials" id="depoimentos" aria-labelledby="dep-title">
       <div class="container narrow">
         <p class="kicker center reveal">Depoimentos</p>
-        <h2 id="dep-title" class="sr-only">O que dizem as pacientes</h2>
-        <span class="quote-mark reveal" aria-hidden="true">“</span>
+        <h2 id="dep-title" class="display center reveal"><span class="line">Quem confia</span> <span class="line">na Dra. <em>Karen</em></span></h2>
+
+        <div class="rating reveal">
+          <p class="rating-score"><span class="rating-num">5,0</span><span class="rating-stars" aria-hidden="true">★★★★★</span></p>
+          <p class="rating-label">Nota 5,0 no Google, com 35 avaliações de pacientes <span class="rating-date">(novembro de 2026)</span></p>
+          <a class="btn btn-pill btn-arrow" href="https://share.google/GTbRoSGE3ivEMTpuU" target="_blank" rel="noopener">
+            Ler as avaliações no Google <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <!--
+          [PREENCHER] Depoimentos em destaque: publique aqui somente textos que as pacientes
+          autorizaram por escrito (regras do CFF e LGPD). Para ativar, descomente o bloco abaixo
+          e troque cada [PREENCHER] pelo texto e pelo primeiro nome + tratamento.
 
         <div class="carousel quotes reveal" data-carousel aria-roledescription="carrossel" aria-label="Depoimentos de pacientes">
           <div class="carousel-track" tabindex="0" aria-label="Depoimentos. Use as setas do teclado para navegar.">
-            <blockquote class="slide quote" aria-roledescription="slide" aria-label="1 de 5"><p>[PREENCHER: depoimento da paciente]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
-            <blockquote class="slide quote" aria-roledescription="slide" aria-label="2 de 5"><p>[PREENCHER: depoimento da paciente]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
-            <blockquote class="slide quote" aria-roledescription="slide" aria-label="3 de 5"><p>[PREENCHER: depoimento da paciente]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
-            <blockquote class="slide quote" aria-roledescription="slide" aria-label="4 de 5"><p>[PREENCHER: depoimento da paciente]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
-            <blockquote class="slide quote" aria-roledescription="slide" aria-label="5 de 5"><p>[PREENCHER: depoimento da paciente]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
+            <blockquote class="slide quote" aria-roledescription="slide" aria-label="1 de 3"><p>[PREENCHER: depoimento]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
+            <blockquote class="slide quote" aria-roledescription="slide" aria-label="2 de 3"><p>[PREENCHER: depoimento]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
+            <blockquote class="slide quote" aria-roledescription="slide" aria-label="3 de 3"><p>[PREENCHER: depoimento]</p><footer>[Primeiro nome] <span>· [Tratamento]</span></footer></blockquote>
           </div>
           <div class="carousel-nav center">
             <button class="carousel-btn" type="button" data-prev aria-label="Depoimento anterior"><svg class="icon" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
-            <p class="carousel-status" aria-live="polite">01 / 05</p>
+            <p class="carousel-status" aria-live="polite">01 / 03</p>
             <button class="carousel-btn" type="button" data-next aria-label="Próximo depoimento"><svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></button>
           </div>
         </div>
+        -->
       </div>
     </section>
 
@@ -433,7 +449,7 @@
             <div><dt>Endereço</dt><dd><address>R. dos Aimorés, 2578, Sala 10<br>Lourdes, Belo Horizonte/MG<br>CEP 30140-076</address></dd></div>
             <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5531992303895?text=Ol%C3%A1%2C%20Dra.%20Karen!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">(31) 99230-3895</a></dd></div>
             <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/drakarenrugani/" target="_blank" rel="noopener">@drakarenrugani</a></dd></div>
-            <div><dt>Horário</dt><dd>[PREENCHER]</dd></div>
+            <div><dt>Horário</dt><dd>Segunda a sexta, das 8h às 18h<br>Sábado e domingo: fechado</dd></div>
           </dl>
         </div>
 
@@ -501,6 +517,6 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=2" defer></script>
+  <script src="js/main.js?v=3" defer></script>
 </body>
 </html>
