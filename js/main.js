@@ -86,12 +86,12 @@
     }
     function go(i) {
       i = Math.max(0, Math.min(slides.length - 1, i));
-      var pad = parseFloat(getComputedStyle(track).paddingLeft || 0);
+      var offset = parseFloat(getComputedStyle(track).paddingLeft || 0);
       current = i;
       status.textContent = pad(i + 1) + ' / ' + pad(slides.length);
       prev.disabled = i === 0;
       next.disabled = i === slides.length - 1;
-      track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft - pad, behavior: reduceMotion ? 'auto' : 'smooth' });
+      track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft - offset, behavior: reduceMotion ? 'auto' : 'smooth' });
     }
     prev.addEventListener('click', function () { go(current - 1); });
     next.addEventListener('click', function () { go(current + 1); });
